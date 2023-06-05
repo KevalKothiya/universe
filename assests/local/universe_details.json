@@ -1,0 +1,114 @@
+[
+  {
+    "id" : 1,
+    "name" : "Universe",
+    "type" : "Universe",
+    "image" : "assests/json_images/universe.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 2,
+    "name" : "Black Hole",
+    "type" : "Black Hole",
+    "image" : "assests/json_images/black.png",
+    "details" : ""
+  },
+  {
+    "id" : 3,
+    "name" : "Ceres",
+    "type" : "Dwaft Planet",
+    "image" : "assests/json_images/ceres.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 4,
+    "name" : "Dwaft Planets",
+    "type" : "Dwaft Planet",
+    "image" : "assests/json_images/dwarf.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 5,
+    "name" : "Mercury",
+    "type" : "Planet",
+    "image" : "assests/json_images/mercury.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 6,
+    "name" : "Venus",
+    "type" : "Planet",
+    "image" : "assests/json_images/venus.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 7,
+    "name" : "Earth",
+    "type" : "Planet",
+    "image" : "assests/json_images/earth.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 8,
+    "name" : "Mars",
+    "type" : "Planet",
+    "image" : "assests/json_images/mars.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 9,
+    "name" : "Jupiter",
+    "type" : "Planet",
+    "image" : "assests/json_images/jupiter.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 10,
+    "name" : "Saturn",
+    "type" : "Planet",
+    "image" : "assests/json_images/saturn.png",
+    "details" : ""
+  },
+  {
+    "id" : 11,
+    "name" : "Uranus",
+    "type" : "Planet",
+    "image" : "assests/json_images/uranus.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 12,
+    "name" : "Neptune",
+    "type" : "Planet",
+    "image" : "assests/json_images/neptune.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 13,
+    "name" : "Earth Moon",
+    "type" : "Moon",
+    "image" : "assests/json_images/moon.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 14,
+    "name" : "Dwaft Planets",
+    "type" : "Dwaft Planet",
+    "image" : "assests/json_images/dwaft.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 15,
+    "name" : "Pluto",
+    "type" : "Dwaft Planet",
+    "image" : "assests/json_images/pluto.jpg",
+    "details" : ""
+  },
+  {
+    "id" : 16,
+    "name" : "Planets",
+    "type" : "Planet",
+    "image" : "assests/json_images/planet.jpg",
+    "details" : ""
+  }
+]
