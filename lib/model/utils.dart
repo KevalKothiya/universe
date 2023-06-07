@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'globals.dart';
+
 
 class AppThemes {
   static ThemeData lightTheme = ThemeData(
@@ -30,3 +32,5 @@ class TextThemes {
     decoration: TextDecoration.none,
   );
 }
+
+

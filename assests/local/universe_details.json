@@ -1,28 +1,6 @@
 [
   {
     "id" : 1,
-    "name" : "UNIVERSE",
-    "type" : "Universe",
-    "image" : "assests/json_images/universe.jpg",
-    "radius" : "46.508 billion light years",
-    "orbital_period" : "NA",
-    "gravity" : "NA",
-    "distance" : "NA",
-    "details" : "The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy. The Big Bang theory is the prevailing cosmological description of the development of the universe. According to this theory, space and time emerged together 13.787±0.020 billion years ago, and the universe has been expanding ever since the Big Bang. While the spatial size of the entire universe is unknown, it is possible to measure the size of the observable universe, which is approximately 93 billion light-years in diameter at the present day.\n\nSome of the earliest cosmological models of the universe were developed by ancient Greek and Indian philosophers and were geocentric, placing Earth at the center. Over the centuries, more precise astronomical observations led Nicolaus Copernicus to develop the heliocentric model with the Sun at the center of the Solar System. In developing the law of universal gravitation, Isaac Newton built upon Copernicus's work as well as Johannes Kepler's laws of planetary motion and observations by Tycho Brahe."
-  },
-  {
-    "id" : 2,
-    "name" : "BLACK HOLE",
-    "type" : "Black Hole",
-    "image" : "assests/json_images/black.png",
-    "radius" : "0.001–400 AU",
-    "orbital_period" : "0.0037",
-    "gravity" : "Infinitive",
-    "distance" : " 26,000 light-years",
-    "details" : "A black hole is a region of spacetime where gravity is so strong that nothing, including light or other electromagnetic waves, has enough energy to escape it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of no escape is called the event horizon. Although it has a great effect on the fate and circumstances of an object crossing it, it has no locally detectable features according to general relativity.[5] In many ways, a black hole acts like an ideal black body, as it reflects no light.[6][7] Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is of the order of billionths of a kelvin for stellar black holes, making it essentially impossible to observe directly.\n\nObjects whose gravitational fields are too strong for light to escape were first considered in the 18th century by John Michell and Pierre-Simon Laplace.[8] In 1916, Karl Schwarzschild found the first modern solution of general relativity that would characterize a black hole. David Finkelstein, in 1958, first published the interpretation of \"black hole\" as a region of space from which nothing can escape. Black holes were long considered a mathematical curiosity; it was not until the 1960s that theoretical work showed they were a generic prediction of general relativity. The discovery of neutron stars by Jocelyn Bell Burnell in 1967 sparked interest in gravitationally collapsed compact objects as a possible astrophysical reality. The first black hole known was Cygnus X-1, identified by several researchers independently in 1971."
-  },
-  {
-    "id" : 3,
     "name" : "CERES",
     "type" : "Dwaft Planet",
     "image" : "assests/json_images/ceres.jpg",
@@ -30,10 +8,11 @@
     "orbital_period" : "1,682 days",
     "gravity" : "0.27 m/s²",
     "distance" : "2.8 astronomical units",
+    "favourite" : false,
     "details" : "Ceres minor-planet designation 1 Ceres, is a dwarf planet in the asteroid belt between the orbits of Mars and Jupiter. It was the first asteroid discovered, on 1 January 1801, by Giuseppe Piazzi at Palermo Astronomical Observatory in Sicily and announced as a new planet. Ceres was later classified as an asteroid and then a dwarf planet – the only one always inside Neptune's orbit.\n\nCeres's small size means that even at its brightest, it is too dim to be seen by the naked eye, except under extremely dark skies. Its apparent magnitude ranges from 6.7 to 9.3, peaking at opposition (when it is closest to Earth) once every 15- to 16-month synodic period. As a result, its surface features are barely visible even with the most powerful telescopes, and little was known about it until the robotic NASA spacecraft Dawn approached Ceres for its orbital mission in 2015."
   },
   {
-    "id" : 4,
+    "id" : 2,
     "name" : "DWAFT PLANET",
     "type" : "Dwaft Planet",
     "image" : "assests/json_images/dwarf.jpg",
@@ -41,10 +20,11 @@
     "orbital_period" : "NA",
     "gravity" : "NA",
     "distance" : "NA",
+    "favourite" : false,
     "details" : "A dwarf planet is a small planetary-mass object that is in direct orbit of the Sun, smaller than any of the eight classical planets but still a world in its own right. The prototypical dwarf planet is Pluto. The interest of dwarf planets to planetary geologists is that they may be geologically active bodies, an expectation that was borne out in 2015 by the Dawn mission to Ceres and the New Horizons mission to Pluto.\n\nAstronomers are in general agreement that at least the nine largest candidates are dwarf planets: Pluto, Eris, Haumea, Makemake, Gonggong, Quaoar, Sedna, Ceres, and Orcus. Of these nine plus the tenth-largest candidate Salacia, two have been visited by spacecraft (Pluto and Ceres) and seven others have at least one known moon (Eris, Haumea, Makemake, Gonggong, Quaoar, Orcus, and Salacia), which allows their masses and thus an estimate of their densities to be determined. Mass and density in turn can be fit into geophysical models in an attempt to determine the nature of these worlds. Only one, Sedna, has neither been visited nor has any known moons, making an accurate estimate of mass difficult. Some astronomers include many smaller bodies as well,[1] but there is no consensus that these are likely to be dwarf planets."
   },
   {
-    "id" : 5,
+    "id" : 3,
     "name" : "MERCURY",
     "type" : "Planet",
     "image" : "assests/json_images/mercury.jpg",
@@ -52,10 +32,11 @@
     "orbital_period" : "88 days",
     "gravity" : "3.7 m/s²",
     "distance" : "60.53 million km",
+    "favourite" : false,
     "details" : "Mercury is the first planet from the Sun and the smallest planet in the Solar System. It is a terrestrial planet with a heavily cratered surface due to the planet having no geological activity and an extremely tenuous atmosphere (called an exosphere). Despite being the smallest planet in the Solar System with a mean diameter of 4,880 km (3,030 mi), 38% of that of Earth's, Mercury is dense enough to have roughly the same surface gravity as Mars. Mercury has a dynamic magnetic field with a strength about 1% of that of Earth's and has no natural satellites.\n\nAccording to current theories, Mercury may have a solid silicate crust and mantle overlying a solid outer core, a deeper liquid core layer, and a solid inner core. Having almost no atmosphere to retain heat, Mercury has surface temperatures that change wildly during the day, ranging from 100 K (−173 °C; −280 °F) at night to 700 K (427 °C; 800 °F) during sunlight across the equator regions.[19] At Mercury's poles though, there are large reservoirs of water ices that are never exposed to direct sunlight, which has an estimated mass of about 0.025–0.25% the Antarctic ice sheet.[20] There are many competing hypothesis about Mercury's origins and development, some of which incorporate collision with planetesimal and rock vaporization."
   },
   {
-    "id" : 6,
+    "id" : 4,
     "name" : "VENUS",
     "type" : "Planet",
     "image" : "assests/json_images/venus.jpg",
@@ -63,10 +44,11 @@
     "orbital_period" : "225 days",
     "gravity" : "887 cm s−2.",
     "distance" : "108.06 million km",
+    "favourite" : false,
     "details" : "Venus is the second planet from the Sun. It is a rocky planet and the only Solar System object with a size and mass close to that of Earth. It has an atmosphere, which is by far the thickest of any rocky body in the Solar System. Venus is the planet with the nearest orbit to Earth's orbit. Orbiting inferiorly (inside of Earth's orbit), it appears in Earth's sky always close to the Sun, as either a \"morning star\" or \"evening star\". While this is also true for Mercury, Venus appears as such much more prominently, since it is the third brightest object in Earth's sky, after the Moon and the Sun,[20][21] appearing brighter than any other star-like classical planet, and any fixed star of Earth's sky. With such prominent appearances in Earth's sky, Venus has been a common and important object for humans, in both their cultures and astronomy.\n\nVenus retains, despite having only a weak induced magnetosphere, an especially thick atmosphere of mainly carbon dioxide, creating an extreme greenhouse effect together with its global sulfuric acid cloud cover. Because of this, the atmosphere reaches at its bottom a mean temperature of 737 K (464 °C; 867 °F) and a crushing pressure of 92 times that of Earth's at sea level, turning the air into a supercritical fluid, though at cloudy altitudes of 50 km (30 mi) Earth like levels are found. Conditions possibly favourable for life on Venus have been identified at its cloud layers, while recent research has found indicative, but not convincing evidence."
   },
   {
-    "id" : 7,
+    "id" : 5,
     "name" : "EARTH",
     "type" : "Planet",
     "image" : "assests/json_images/earth.jpg",
@@ -74,10 +56,11 @@
     "orbital_period" : "365/366 days",
     "gravity" : "9.8 m/s²",
     "distance" : "151.78 million km",
+    "favourite" : false,
     "details" : "Earth is the third planet from the Sun and the only place known in the universe where life has originated and found habitability. While Earth may not contain the largest volumes of water in the Solar System, only Earth sustains liquid surface water, extending over 70.8% of the planet with its ocean, making it an ocean world. The polar regions currently retain most of all other water with large sheets of ice covering ocean and land, dwarfing Earth's groundwater, lakes, rivers and atmospheric water. The other 29.2% of the Earth's surface is land, consisting of continents and islands, and is widely covered by vegetation. Below the planet's surface lies the crust, consisting of several slowly moving tectonic plates, which interact to produce mountain ranges, volcanoes, and earthquakes. Inside the Earth's crust is a liquid outer core that generates the magnetosphere, deflecting most of the destructive solar winds and cosmic radiation.\n\nEarth has a dynamic atmosphere, which sustains Earth's surface conditions and protects it from most meteoroids and UV-light at entry. It has a composition of primarily nitrogen and oxygen. Water vapor is widely present in the atmosphere, forming clouds that cover most of the planet. The water vapor acts as a greenhouse gas and, together with other greenhouse gases in the atmosphere, particularly carbon dioxide (CO2), creates the conditions for both liquid surface water and water vapor to persist via the capturing of energy from the Sun's light."
   },
   {
-    "id" : 8,
+    "id" : 6,
     "name" : "MARS",
     "type" : "Planet",
     "image" : "assests/json_images/mars.jpg",
@@ -85,10 +68,11 @@
     "orbital_period" : "687 days",
     "gravity" : "3.71 m/s²",
     "distance" : "250.69 million km",
+    "favourite" : false,
     "details" : "Mars is the fourth planet and the furthest terrestrial planet from the Sun. The reddish color of its surface is due to finely grained iron(III) oxide dust in the soil, giving it the nickname \"the Red Planet\". Mars has a second smallest radius among the planets in the Solar System at 3,389.5 km (2,106 mi) and has a surface gravity of 3.72 m/s2 (12.2 ft/s2), which is 38% of Earth's gravity. The Martian dichotomy can be clearly seen on the surface: on average, the terrain on Mars northern hemisphere is flatter and lower than Mars southern hemisphere. Mars has a very thin atmosphere made primarily of carbon dioxide and two irregularly shaped natural satellites: Phobos and Deimos.\n\nGeologically, Mars is fairly active, with dust devils sweeping across the landscape and marsquakes (Martian analog to earthquakes) trembling underneath the ground. The surface of Mars hosts a shield volcano (Olympus Mons) and one of the largest canyons in the Solar System (Valles Marineris). Mars's celestial motion is comparable to that of Earth, with a slightly eccentric orbit and an axial tilt only slightly greater than Earth's. This motion cause seasonal changes to the polar ice caps' coverage and temperature swing between −110 °C (−166 °F) to 35 °C (95 °F) on the surface. A Martian solar day (sol) is equal to 24.5 hours and a Martian solar year is equal to 1.88 Earth years."
   },
   {
-    "id" : 9,
+    "id" : 7,
     "name" : "JUPITER",
     "type" : "Planet",
     "image" : "assests/json_images/jupiter.jpg",
@@ -96,10 +80,11 @@
     "orbital_period" : "12 years",
     "gravity" : "24.79 m/s²",
     "distance" : "484 million miles",
+    "favourite" : false,
     "details" : "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other planets in the Solar System combined, and slightly less than one one-thousandth the mass of the Sun. Jupiter is the third brightest natural object in the Earth's night sky after the Moon and Venus, and it has been observed since prehistoric times. It was named after Jupiter, the chief deity of ancient Roman religion.\n\nJupiter is primarily composed of hydrogen (90% by volume), followed by helium, which constitutes a quarter of its mass and a tenth of its volume. The ongoing contraction of Jupiter's interior generates more heat than the planet receives from the Sun. Because of its rapid rotation rate of 1 rotation per 10 hours, the planet's shape is an oblate spheroid: it has a slight but noticeable bulge around the equator. The outer atmosphere is divided into a series of latitudinal bands, with turbulence and storms along their interacting boundaries. The most obvious result of this is the Great Red Spot, a giant storm which has been observed since 1831 and possibly earlier."
   },
   {
-    "id" : 10,
+    "id" : 8,
     "name" : "SATURN",
     "type" : "Planet",
     "image" : "assests/json_images/saturn.png",
@@ -107,10 +92,11 @@
     "orbital_period" : "29 years",
     "gravity" : "10.44 m/s²",
     "distance" : "1.4636 billion km",
+    "favourite" : false,
     "details" : "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth.[25][26] It has only one-eighth the average density of Earth, but is over 95 times more massive.[27][28][29]\n\nSaturn's interior is thought to be composed of a rocky core, surrounded by a deep layer of metallic hydrogen, an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer. Saturn has a pale yellow hue due to ammonia crystals in its upper atmosphere. An electrical current within the metallic hydrogen layer is thought to give rise to Saturn's planetary magnetic field, which is weaker than Earth's, but which has a magnetic moment 580 times that of Earth due to Saturn's larger size. Saturn's magnetic field strength is around one-twentieth of Jupiter's.[30] The outer atmosphere is generally bland and lacking in contrast, although long-lived features can appear. Wind speeds on Saturn can reach 1,800 kilometres per hour (1,100 miles per hour)."
   },
   {
-    "id" : 11,
+    "id" : 9,
     "name" : "URANUS",
     "type" : "Planet",
     "image" : "assests/json_images/uranus.jpg",
@@ -118,10 +104,11 @@
     "orbital_period" : "84 years",
     "gravity" : "8.87 m/s²",
     "distance" : "2.938 billion km",
+    "favourite" : false,
     "details" : "Uranus is the seventh planet from the Sun and is a gaseous cyan ice giant. Most of Uranus is made out of water, ammonia, and methane in a supercritical phase of matter, which in astronomy is called 'ice' or volatiles. The planet's atmosphere has a complex layered cloud structure and has the lowest minimum temperature of 49 K (−224 °C; −371 °F) out of all Solar System's planets. Uranus has a marked axial tilt of 97.8° with a retrograde rotation rate of 17 hours. This means that in an 84 Earth years orbital period around the Sun, its poles get around 42 years of continuous sunlight, followed by 42 years of continuous darkness.\n\nUranus has the third-largest diameter and fourth-largest mass among the Solar System's planets. Based on current models, inside Uranus's volatile mantle layer is a rocky core, and surrounding it is a thick hydrogen and helium atmosphere. Trace amount of hydrocarbons (thought to be produced via hydrolysis) and carbon monoxide along with carbon dioxide (thought to have been originated from comets) have been detected in the upper atmosphere. There are many unexplained climate phenomena in Uranus's atmosphere, such as its peak wind speed of 900 km/h (560 mph),[22] variations in its polar cap and its erratic cloud formation. Uranus also has a very low internal heat compared to other giant planets, which is still unexplained."
   },
   {
-    "id" : 12,
+    "id" : 10,
     "name" : "NEPTUNE",
     "type" : "Planet",
     "image" : "assests/json_images/neptune.jpg",
@@ -129,10 +116,11 @@
     "orbital_period" : "165 years",
     "gravity" : "11.15 m/s²",
     "distance" : "4.4731 billion km",
+    "favourite" : false,
     "details" : "Neptune is the eighth planet from the Sun and the farthest known planet in the Solar System. It is the fourth-largest planet in the Solar System by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, and slightly more massive than its near-twin Uranus. Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere. Being composed primarily of gases and liquids, it has no well-defined solid surface. The planet orbits the Sun once every 164.8 years at an average distance of 30.1 astronomical units (4.5 billion kilometres; 2.8 billion miles). It is named after the Roman god of the sea and has the astronomical symbol ♆, representing Neptune's trident.[d]\n\nNeptune is not visible to the unaided eye and is the only planet in the Solar System found by mathematical prediction rather than by empirical observation. Unexpected changes in the orbit of Uranus led Alexis Bouvard to hypothesise that its orbit was subject to gravitational perturbation by an unknown planet. After Bouvard's death, the position of Neptune was predicted from his observations, independently, by John Couch Adams and Urbain Le Verrier. Neptune was subsequently observed with a telescope on 23 September 1846[1] by Johann Galle within a degree of the position predicted by Le Verrier. Its largest moon, Triton, was discovered shortly thereafter, though none of the planet's remaining 13 known moons were located telescopically until the 20th century."
   },
   {
-    "id" : 13,
+    "id" : 11,
     "name" : "EARTH MOON",
     "type" : "Moon",
     "image" : "assests/json_images/moon.jpg",
@@ -140,10 +128,11 @@
     "orbital_period" : "27 days",
     "gravity" : "1.62 m/s²",
     "distance" : "150 million kilometres",
+    "favourite" : false,
     "details" : "The Moon is Earth's only natural satellite. Its diameter is about one-quarter of Earth's (comparable to the width of Australia),[17] making it the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet.[f] It is larger than all known dwarf planets in the Solar System.[18] The Moon is a planetary-mass object with a differentiated rocky body, making it a satellite planet under the geophysical definitions of the term. It lacks any significant atmosphere, hydrosphere, or magnetic field. Its surface gravity is about one-sixth of Earth's at 0.1654 g—Jupiter's moon Io is the only satellite in the Solar System known to have a higher surface gravity and density.\n\nThe Moon orbits Earth at an average distance of 384,400 km (238,900 mi), or about 30 times Earth's diameter. Its gravitational influence is the main driver of Earth's tides and very slowly lengthens Earth's day. The Moon's orbit around Earth has a sidereal period of 27.3 days. During each synodic period of 29.5 days, the amount of visible surface illuminated by the Sun varies from none up to 100%, resulting in lunar phases that form the basis for the months of a lunar calendar. "
   },
   {
-    "id" : 14,
+    "id" : 12,
     "name" : "Dwaft Planets",
     "type" : "Dwaft Planet",
     "image" : "assests/json_images/dwarf.jpg",
@@ -151,10 +140,11 @@
     "orbital_period" : "NA",
     "gravity" : "NA",
     "distance" : "NA",
+    "favourite" : false,
     "details" : ""
   },
   {
-    "id" : 15,
+    "id" : 13,
     "name" : "PLUTO",
     "type" : "Dwaft Planet",
     "image" : "assests/json_images/pluto.jpg",
@@ -162,10 +152,11 @@
     "orbital_period" : "248 years",
     "gravity" : "0.62 m/s²",
     "distance" : "3.7 billion miles",
+    "favourite" : false,
     "details" : "Pluto (minor-planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It is the ninth-largest and tenth-most-massive known object to directly orbit the Sun. It is the largest known trans-Neptunian object by volume, by a small margin, but is slightly less massive than Eris. Like other Kuiper belt objects, Pluto is made primarily of ice and rock and is much smaller than the inner planets. Pluto has only one sixth the mass of Earth's moon, and one third its volume.\n\nPluto has a moderately eccentric and inclined orbit, ranging from 30 to 49 astronomical units (4.5 to 7.3 billion kilometers; 2.8 to 4.6 billion miles) from the Sun. Light from the Sun takes 5.5 hours to reach Pluto at its orbital distance of 39.5 AU (5.91 billion km; 3.67 billion mi). Pluto's eccentric orbit periodically brings it closer to the Sun than Neptune, but a stable orbital resonance prevents them from colliding."
   },
   {
-    "id" : 16,
+    "id" : 14,
     "name" : "PLANETS",
     "type" : "Planet",
     "image" : "assests/json_images/planet.jpg",
@@ -173,6 +164,31 @@
     "orbital_period" : "NA",
     "gravity" : "NA",
     "distance" : "NA",
+    "favourite" : false,
     "details" : ""
+  },
+  {
+    "id" : 15,
+    "name" : "UNIVERSE",
+    "type" : "Universe",
+    "image" : "assests/json_images/universe.jpg",
+    "radius" : "46.508 billion light years",
+    "orbital_period" : "NA",
+    "gravity" : "NA",
+    "distance" : "NA",
+    "favourite" : false,
+    "details" : "The universe is all of space and time and their contents, including planets, stars, galaxies, and all other forms of matter and energy. The Big Bang theory is the prevailing cosmological description of the development of the universe. According to this theory, space and time emerged together 13.787±0.020 billion years ago, and the universe has been expanding ever since the Big Bang. While the spatial size of the entire universe is unknown, it is possible to measure the size of the observable universe, which is approximately 93 billion light-years in diameter at the present day.\n\nSome of the earliest cosmological models of the universe were developed by ancient Greek and Indian philosophers and were geocentric, placing Earth at the center. Over the centuries, more precise astronomical observations led Nicolaus Copernicus to develop the heliocentric model with the Sun at the center of the Solar System. In developing the law of universal gravitation, Isaac Newton built upon Copernicus's work as well as Johannes Kepler's laws of planetary motion and observations by Tycho Brahe."
+  },
+  {
+    "id" : 16,
+    "name" : "BLACK HOLE",
+    "type" : "Black Hole",
+    "image" : "assests/json_images/black.png",
+    "radius" : "0.001–400 AU",
+    "orbital_period" : "0.0037",
+    "gravity" : "Infinitive",
+    "distance" : " 26,000 light-years",
+    "favourite" : false,
+    "details" : "A black hole is a region of spacetime where gravity is so strong that nothing, including light or other electromagnetic waves, has enough energy to escape it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of no escape is called the event horizon. Although it has a great effect on the fate and circumstances of an object crossing it, it has no locally detectable features according to general relativity.[5] In many ways, a black hole acts like an ideal black body, as it reflects no light.[6][7] Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is of the order of billionths of a kelvin for stellar black holes, making it essentially impossible to observe directly.\n\nObjects whose gravitational fields are too strong for light to escape were first considered in the 18th century by John Michell and Pierre-Simon Laplace.[8] In 1916, Karl Schwarzschild found the first modern solution of general relativity that would characterize a black hole. David Finkelstein, in 1958, first published the interpretation of \"black hole\" as a region of space from which nothing can escape. Black holes were long considered a mathematical curiosity; it was not until the 1960s that theoretical work showed they were a generic prediction of general relativity. The discovery of neutron stars by Jocelyn Bell Burnell in 1967 sparked interest in gravitationally collapsed compact objects as a possible astrophysical reality. The first black hole known was Cygnus X-1, identified by several researchers independently in 1971."
   }
 ]

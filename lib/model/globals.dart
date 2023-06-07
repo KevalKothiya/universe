@@ -32,6 +32,7 @@ class Universe_Model {
   String orbital_period;
   String gravity;
   String distance;
+  bool favourite;
 
   Universe_Model({
     required this.id,
@@ -43,6 +44,7 @@ class Universe_Model {
     required this.orbital_period,
     required this.gravity,
     required this.distance,
+    required this.favourite,
   });
 
   factory Universe_Model.map({required Map data}) {
@@ -55,6 +57,7 @@ class Universe_Model {
       radius: data['radius'],
       distance: data['distance'],
       gravity: data['gravity'],
+      favourite: data['favourite'],
       orbital_period: data['orbital_period'],
     );
   }

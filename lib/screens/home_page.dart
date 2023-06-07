@@ -15,16 +15,19 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   List<AnimationController> controller = [];
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    loaddata();
+    Future.delayed(Duration.zero, () {
+      this.loaddata();
+    });
 
     int num =
         Provider.of<loadData_Provider>(context, listen: false).universe.length;
 
-    for (int i = 0; i < num; i++)
+    for (int i = 0; i < num; i++) {
       controller.add(
         AnimationController(
           vsync: this,
@@ -35,20 +38,24 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           upperBound: 2 * pi,
         ),
       );
+    }
   }
 
   loaddata() async {
-    Provider.of<loadData_Provider>(context, listen: false).loadData();
+    await Provider.of<loadData_Provider>(context, listen: false).loadData();
   }
 
   @override
   void dispose() {
     super.dispose();
+    Navigator.of(context)
+        .pushAndRemoveUntil('/' as Route<Object?>, (route) => false);
   }
 
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      key: _scaffoldKey,
       backgroundColor: CupertinoColors.systemGrey2,
       child: (Provider.of<loadData_Provider>(context).universe.isNotEmpty &&
               Provider.of<loadData_Provider>(context)
@@ -69,10 +76,11 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         SliverAppBar(
                           backgroundColor:
                               CupertinoColors.black.withOpacity(0.5),
-                          leading: const IconButton(
-                            onPressed: null,
+                          leading: IconButton(
+                            onPressed: () {},
                             icon: Icon(
                               CupertinoIcons.app_badge_fill,
+                              color: CupertinoColors.white,
                             ),
                           ),
                           actions: [
@@ -82,6 +90,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                               },
                               icon: Icon(
                                 CupertinoIcons.settings,
+                                color: CupertinoColors.white,
                               ),
                             ),
                           ],
@@ -93,15 +102,16 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           flexibleSpace: FlexibleSpaceBar(
                             title: const Text("Universe"),
                             collapseMode: CollapseMode.pin,
-                            // stretchModes: [
-                            //   StretchMode.zoomBackground,
-                            //   StretchMode.fadeTitle,
-                            // ],
-                            background: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark == false)?Image.asset(
-                                "assests/home_page_image/galaxy.jpg",
-                                fit: BoxFit.cover):Image.asset(
-                                "assests/home_page_image/flex_image.jpeg",
-                                fit: BoxFit.cover),
+                            background: (Provider.of<DarkMode_Provider>(context)
+                                        .darkMode_Model
+                                        .isDark ==
+                                    false)
+                                ? Image.asset(
+                                    "assests/home_page_image/galaxy.jpg",
+                                    fit: BoxFit.cover)
+                                : Image.asset(
+                                    "assests/home_page_image/flex_image.jpeg",
+                                    fit: BoxFit.cover),
                           ),
                         ),
                         SliverToBoxAdapter(
@@ -263,10 +273,76 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         SliverAppBar(
                           backgroundColor:
                               CupertinoColors.black.withOpacity(0.5),
-                          leading: const IconButton(
-                            onPressed: null,
+                          leading: IconButton(
+                            onPressed: () {
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[0]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[1]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[2]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[3]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[4]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[5]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[6]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[7]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[8]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[9]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[10]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[11]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[12]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[13]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[14]
+                                  .favourite);
+                              print(Provider.of<loadData_Provider>(context,
+                                      listen: false)
+                                  .universe[15]
+                                  .favourite);
+                            },
                             icon: Icon(
                               CupertinoIcons.app_badge_fill,
+                              color: CupertinoColors.white,
                             ),
                           ),
                           actions: [
@@ -276,6 +352,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                               },
                               icon: Icon(
                                 CupertinoIcons.settings,
+                                color: CupertinoColors.white,
                               ),
                             ),
                           ],
@@ -291,11 +368,16 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             //   StretchMode.zoomBackground,
                             //   StretchMode.fadeTitle,
                             // ],
-                            background: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark == false)?Image.asset(
-                                "assests/home_page_image/galaxy.jpg",
-                                fit: BoxFit.cover):Image.asset(
-                                "assests/home_page_image/flex_image.jpeg",
-                                fit: BoxFit.cover),
+                            background: (Provider.of<DarkMode_Provider>(context)
+                                        .darkMode_Model
+                                        .isDark ==
+                                    false)
+                                ? Image.asset(
+                                    "assests/home_page_image/galaxy.jpg",
+                                    fit: BoxFit.cover)
+                                : Image.asset(
+                                    "assests/home_page_image/flex_image.jpeg",
+                                    fit: BoxFit.cover),
                           ),
                         ),
                         SliverToBoxAdapter(
@@ -461,7 +543,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       slivers: [
         SliverAppBar(
           backgroundColor: CupertinoColors.black.withOpacity(0.5),
-          leading: const IconButton(
+          leading: IconButton(
             onPressed: null,
             icon: Icon(
               CupertinoIcons.app_badge_fill,
@@ -488,11 +570,14 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           flexibleSpace: FlexibleSpaceBar(
             title: const Text("Universe"),
             collapseMode: CollapseMode.pin,
-            background: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark == false)?Image.asset(
-                "assests/home_page_image/galaxy.jpg",
-                fit: BoxFit.cover):Image.asset(
-                "assests/home_page_image/flex_image.jpeg",
-                fit: BoxFit.cover),
+            background: (Provider.of<DarkMode_Provider>(context)
+                        .darkMode_Model
+                        .isDark ==
+                    false)
+                ? Image.asset("assests/home_page_image/galaxy.jpg",
+                    fit: BoxFit.cover)
+                : Image.asset("assests/home_page_image/flex_image.jpeg",
+                    fit: BoxFit.cover),
           ),
         ),
         SliverToBoxAdapter(

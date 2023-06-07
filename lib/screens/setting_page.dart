@@ -18,19 +18,34 @@ class _SettingPageState extends State<SettingPage> {
     return CupertinoPageScaffold(
       child: CustomScrollView(
         slivers: [
-           CupertinoSliverNavigationBar(
+          CupertinoSliverNavigationBar(
             leading: Icon(CupertinoIcons.person_2),
             largeTitle: Text(
               'Developer',
               style: TextStyle(
-                color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                color: (Provider.of<DarkMode_Provider>(context)
+                        .darkMode_Model
+                        .isDark)
+                    ? CupertinoColors.white
+                    : CupertinoColors.black,
               ),
             ),
-            trailing: Icon(CupertinoIcons.add_circled),
+            trailing: IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, 'heart_page');
+              },
+              icon: Icon(
+                CupertinoIcons.heart_circle_fill,
+              ),
+            ),
           ),
           SliverFillRemaining(
             child: Container(
-              color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.black:CupertinoColors.white,
+              color: (Provider.of<DarkMode_Provider>(context)
+                      .darkMode_Model
+                      .isDark)
+                  ? CupertinoColors.black
+                  : CupertinoColors.white,
               padding: EdgeInsets.all(2.h),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -43,15 +58,12 @@ class _SettingPageState extends State<SettingPage> {
                       ),
                       Text(
                         "APPEARANCE",
-                        style: (Provider.of<
-                            DarkMode_Provider>(
-                            context)
-                            .darkMode_Model
-                            .isDark)
-                            ? TextThemes
-                            .textStyleDark.copyWith(color: CupertinoColors.white)
-                            : TextThemes
-                            .textStyleLight,
+                        style: (Provider.of<DarkMode_Provider>(context)
+                                .darkMode_Model
+                                .isDark)
+                            ? TextThemes.textStyleDark
+                                .copyWith(color: CupertinoColors.white)
+                            : TextThemes.textStyleLight,
                       ),
                     ],
                   ),
@@ -60,10 +72,14 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Card(
                     child: CupertinoListTile(
-                      title:  Text(
+                      title: Text(
                         "Dark Apperarance",
                         style: TextStyle(
-                          color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                          color: (Provider.of<DarkMode_Provider>(context)
+                                  .darkMode_Model
+                                  .isDark)
+                              ? CupertinoColors.white
+                              : CupertinoColors.black,
                         ),
                       ),
                       trailing: CupertinoSwitch(
@@ -84,7 +100,11 @@ class _SettingPageState extends State<SettingPage> {
                     child: CupertinoListSection(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark?Colors.grey.shade900:Colors.white.withOpacity(0.5),
+                        color: Provider.of<DarkMode_Provider>(context)
+                                .darkMode_Model
+                                .isDark
+                            ? Colors.grey.shade900
+                            : Colors.white.withOpacity(0.5),
                       ),
                       header: const Text("DISPLAY VIEW"),
                       footer: Text(
@@ -103,10 +123,14 @@ class _SettingPageState extends State<SettingPage> {
                       ),
                       children: [
                         CupertinoListTile(
-                          title:  Text(
+                          title: Text(
                             "View",
                             style: TextStyle(
-                              color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                              color: (Provider.of<DarkMode_Provider>(context)
+                                      .darkMode_Model
+                                      .isDark)
+                                  ? CupertinoColors.white
+                                  : CupertinoColors.black,
                             ),
                           ),
                           trailing: Row(
@@ -115,7 +139,12 @@ class _SettingPageState extends State<SettingPage> {
                               Text(
                                 "Standard",
                                 style: TextStyle(
-                                  color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                                  color:
+                                      (Provider.of<DarkMode_Provider>(context)
+                                              .darkMode_Model
+                                              .isDark)
+                                          ? CupertinoColors.white
+                                          : CupertinoColors.black,
                                 ),
                               ),
                               const IconButton(
@@ -128,10 +157,14 @@ class _SettingPageState extends State<SettingPage> {
                           ),
                         ),
                         CupertinoListTile(
-                          title:  Text(
+                          title: Text(
                             "Grid View",
                             style: TextStyle(
-                              color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                              color: (Provider.of<DarkMode_Provider>(context)
+                                      .darkMode_Model
+                                      .isDark)
+                                  ? CupertinoColors.white
+                                  : CupertinoColors.black,
                             ),
                           ),
                           trailing: CupertinoSwitch(
@@ -156,15 +189,23 @@ class _SettingPageState extends State<SettingPage> {
                     child: CupertinoListSection(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark?Colors.grey.shade900:Colors.white.withOpacity(0.5),
+                        color: Provider.of<DarkMode_Provider>(context)
+                                .darkMode_Model
+                                .isDark
+                            ? Colors.grey.shade900
+                            : Colors.white.withOpacity(0.5),
                       ),
                       header: const Text("UI AUTOMATION"),
                       children: [
                         CupertinoListTile(
-                          title:  Text(
+                          title: Text(
                             "Enabled Explict Animation",
                             style: TextStyle(
-                              color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                              color: (Provider.of<DarkMode_Provider>(context)
+                                      .darkMode_Model
+                                      .isDark)
+                                  ? CupertinoColors.white
+                                  : CupertinoColors.black,
                             ),
                           ),
                           trailing: CupertinoSwitch(
@@ -178,11 +219,15 @@ class _SettingPageState extends State<SettingPage> {
                             },
                           ),
                         ),
-                         CupertinoListTile(
+                        CupertinoListTile(
                           title: Text(
                             "Multipath NetWorking",
                             style: TextStyle(
-                              color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                              color: (Provider.of<DarkMode_Provider>(context)
+                                      .darkMode_Model
+                                      .isDark)
+                                  ? CupertinoColors.white
+                                  : CupertinoColors.black,
                             ),
                           ),
                           trailing: IconButton(
@@ -192,11 +237,15 @@ class _SettingPageState extends State<SettingPage> {
                             ),
                           ),
                         ),
-                         CupertinoListTile(
+                        CupertinoListTile(
                           title: Text(
                             "HTTP/3",
                             style: TextStyle(
-                              color: (Provider.of<DarkMode_Provider>(context).darkMode_Model.isDark)?CupertinoColors.white:CupertinoColors.black,
+                              color: (Provider.of<DarkMode_Provider>(context)
+                                      .darkMode_Model
+                                      .isDark)
+                                  ? CupertinoColors.white
+                                  : CupertinoColors.black,
                             ),
                           ),
                           trailing: CupertinoSwitch(

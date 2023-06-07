@@ -43,7 +43,9 @@ class GridViewMode_Provider extends ChangeNotifier {
 class ExplictMode_Provider extends ChangeNotifier {
   ExplictMode_Model explict;
 
-  ExplictMode_Provider({required this.explict,});
+  ExplictMode_Provider({
+    required this.explict,
+  });
 
   AlternateValue() async {
     explict.isExplict = !explict.isExplict;
@@ -56,23 +58,44 @@ class ExplictMode_Provider extends ChangeNotifier {
   }
 }
 
-
 class loadData_Provider extends ChangeNotifier {
   String? data;
-
   List<Universe_Model> universe = [];
 
   Future<void> loadData() async {
     data = await rootBundle.loadString("assests/local/universe_details.json");
+
     List decoded = jsonDecode(data!);
 
     universe = decoded
         .map(
-          (e) =>
-          Universe_Model.map(
+          (e) => Universe_Model.map(
             data: e,
           ),
-    )
+        )
         .toList();
+  }
+
+  falseToTrue({required int i}) async {
+    universe[i].favourite = true;
+  }
+
+  trueToFalse({required int i}) async {
+    universe[i].favourite = false;
+  }
+}
+
+class Favourite_Provider extends ChangeNotifier {
+  List<Universe_Model> favourite = [];
+
+
+  addToFavourite({required Universe_Model added}) async {
+    favourite.add(added);
+
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+
+    await preferences.setStringList('favourite', favourite.cast<String>());
+
+    notifyListeners();
   }
 }

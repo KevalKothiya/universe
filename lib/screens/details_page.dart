@@ -19,6 +19,7 @@ class _DetailsPageState extends State<DetailsPage>
     with TickerProviderStateMixin {
   late AnimationController controller;
 
+
   @override
   void initState() {
     super.initState();
@@ -26,9 +27,12 @@ class _DetailsPageState extends State<DetailsPage>
       vsync: this,
       lowerBound: 0,
       upperBound: 2 * pi,
-      duration: Duration(milliseconds: 3000),
+      duration: Duration(milliseconds: 50000),
     );
+
+    controller.repeat();
   }
+
 
   @override
   void dispose() {
@@ -58,6 +62,46 @@ class _DetailsPageState extends State<DetailsPage>
                       children: [
                         SizedBox(
                           height: 7.h,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            IconButton(
+                              onPressed: (){
+                                Navigator.pop(context);
+                              },
+                              icon: Icon(
+                                CupertinoIcons.back,
+                                color: CupertinoColors.white,
+                              ),
+                            ),
+                            IconButton(
+                              onPressed: (){
+                                 data.favourite = !data.favourite;
+
+                                setState(() {});
+
+                                if(data.favourite == true)
+                                  {
+                                    Provider.of<loadData_Provider>(context,listen: false).falseToTrue(i: data.id);
+
+                                  } else{
+                                  Provider.of<loadData_Provider>(context,listen: false).universe[data.id].favourite = false;
+                                }
+
+                                if(data.favourite == true)
+                                  {
+                                    Provider.of<Favourite_Provider>(context,listen: false).addToFavourite(added: data);
+
+                                  }
+
+                              },
+                              icon: Icon(
+                                CupertinoIcons.heart_fill,
+                                color: (data.favourite == false)?CupertinoColors.white:CupertinoColors.destructiveRed,
+                              ),
+                            ),
+                          ],
                         ),
                         Text(
                           data.name,
@@ -344,7 +388,7 @@ class _DetailsPageState extends State<DetailsPage>
                                   .isDark)
                               ? TextThemes.textStyleDark.copyWith(
                                   fontSize: 7.h,
-                            color: CupertinoColors.white,
+                                  color: CupertinoColors.white,
                                 )
                               : TextThemes.textStyleLight.copyWith(
                                   color: CupertinoColors.white,
@@ -357,9 +401,9 @@ class _DetailsPageState extends State<DetailsPage>
                           child: TweenAnimationBuilder(
                             tween: Tween<double>(
                               begin: 0,
-                              end: 4 * pi,
+                              end: 2 * pi,
                             ),
-                            duration: Duration(seconds: 10),
+                            duration: Duration(seconds: 50),
                             child: CircleAvatar(
                               radius: 25.h,
                               foregroundImage: AssetImage(data.image),
@@ -387,9 +431,9 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color:
-                                        CupertinoColors.systemGrey2,
-                                      )
+                                              color:
+                                                  CupertinoColors.systemGrey2,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color:
                                                   CupertinoColors.systemGrey2,
@@ -402,8 +446,8 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color: CupertinoColors.white,
-                                      )
+                                              color: CupertinoColors.white,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color: CupertinoColors.white,
                                             ),
@@ -422,9 +466,9 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color:
-                                        CupertinoColors.systemGrey2,
-                                      )
+                                              color:
+                                                  CupertinoColors.systemGrey2,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color:
                                                   CupertinoColors.systemGrey2,
@@ -437,8 +481,8 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color: CupertinoColors.white,
-                                      )
+                                              color: CupertinoColors.white,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color: CupertinoColors.white,
                                             ),
@@ -464,9 +508,9 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color:
-                                        CupertinoColors.systemGrey2,
-                                      )
+                                              color:
+                                                  CupertinoColors.systemGrey2,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color:
                                                   CupertinoColors.systemGrey2,
@@ -479,8 +523,8 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color: CupertinoColors.white,
-                                      )
+                                              color: CupertinoColors.white,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color: CupertinoColors.white,
                                             ),
@@ -499,9 +543,9 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color:
-                                        CupertinoColors.systemGrey2,
-                                      )
+                                              color:
+                                                  CupertinoColors.systemGrey2,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color:
                                                   CupertinoColors.systemGrey2,
@@ -514,8 +558,8 @@ class _DetailsPageState extends State<DetailsPage>
                                               .darkMode_Model
                                               .isDark)
                                           ? TextThemes.textStyleDark.copyWith(
-                                        color: CupertinoColors.white,
-                                      )
+                                              color: CupertinoColors.white,
+                                            )
                                           : TextThemes.textStyleLight.copyWith(
                                               color: CupertinoColors.white,
                                             ),
@@ -541,7 +585,7 @@ class _DetailsPageState extends State<DetailsPage>
                                         .isDark)
                                     ? TextThemes.textStyleDark.copyWith(
                                         fontSize: 3.h,
-                                  color: CupertinoColors.systemGrey2,
+                                        color: CupertinoColors.systemGrey2,
                                       )
                                     : TextThemes.textStyleLight.copyWith(
                                         color: CupertinoColors.systemGrey2,

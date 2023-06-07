@@ -6,6 +6,7 @@ import 'package:universe/controller/controller_provider.dart';
 import 'package:universe/model/globals.dart';
 import 'package:universe/model/utils.dart';
 import 'package:universe/screens/details_page.dart';
+import 'package:universe/screens/heart_page.dart';
 import 'package:universe/screens/home_page.dart';
 import 'package:universe/screens/setting_page.dart';
 import 'package:universe/screens/splash_page.dart';
@@ -17,7 +18,7 @@ void main() async {
 
   bool isDark = await preferences.getBool('isDark') ?? false;
   bool isGrid = await preferences.getBool('isGrid') ?? false;
-  bool isExplict = await preferences.getBool('isExplict') ?? false;
+  bool isExplict = await preferences.getBool('isExplict') ?? true;
 
   runApp(
     MultiProvider(
@@ -26,6 +27,7 @@ void main() async {
         ChangeNotifierProvider(create: (context) => GridViewMode_Provider(gridViewMode_Model: GridViewMode_Model(isGrid: isGrid,),),),
         ChangeNotifierProvider(create: (context) => ExplictMode_Provider(explict: ExplictMode_Model(isExplict: isExplict,),),),
         ChangeNotifierProvider(create: (context) => loadData_Provider(),),
+        ChangeNotifierProvider(create: (context) => Favourite_Provider(),),
       ],
       builder: (context, child) {
         return Sizer(
@@ -45,6 +47,7 @@ void main() async {
                 'splash_screen' : (context) => SplashScreen(),
                 'details_page' : (context) => DetailsPage(),
                 'setting_page' : (context) => SettingPage(),
+                'heart_page' : (context) => HeartPage(),
               },
             );
           },
