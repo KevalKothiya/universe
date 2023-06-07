@@ -91,7 +91,8 @@ and entertaining journey through the galaxy.
 
 
 
-https://github.com/KevalKothiya/chanakya_Niti/assets/131429045/8acb0aef-7f3d-4e4c-ba66-08533b5f7f54![Screenshot_2023-06-07-18-25-11-144_com example universe](https://github.com/KevalKothiya/universe/assets/131429045/f3f23c1a-0778-40e0-97c9-5f983f35fbc9)
+
+
 
 
 
@@ -101,17 +102,21 @@ https://github.com/KevalKothiya/chanakya_Niti/assets/131429045/8acb0aef-7f3d-4e4
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/ccf35ec1-9b30-4ad7-be9a-0169de0d007b" width="220px">
 <img src="https://github.com/KevalKothiya/universe/assets/131429045/e03530a4-d98e-41cc-963c-80519f259138" width="220px">
 
+
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/8281c9d9-26cd-448c-a0fa-2c3b2b3454a9" width="220px">
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/39d39a84-1fa1-4844-99a1-bb313980ffae" width="220px">
 <img src="https://github.com/KevalKothiya/universe/assets/131429045/1c76b42d-46f3-4e4d-9da3-917e840bfb46" width="220px">
+
 
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/c7ee5512-39a7-4eaf-8724-add43b2585d3" width="220px">
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/4160a4a6-3dd9-4b4b-ae0d-61ea0f40b297" width="220px">
 <img src="https://github.com/KevalKothiya/universe/assets/131429045/b00988e8-948b-4f9b-bacc-8b6201f6f234" width="220px">
 
+
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/4ef357d8-3a42-43b2-95b0-b46e83a2f9e0" width="220px">
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/fecc0292-eba9-417f-9bf2-bf9e755797c8" width="220px">
 <img src="https://github.com/KevalKothiya/universe/assets/131429045/62bcb4d4-342a-44c2-8bf1-c0622054c1f5" width="220px">
+
 
 <img align="left" src="(https://github.com/KevalKothiya/universe/assets/131429045/d338a226-ce18-461d-a3f0-1a15fca231da" width="220px">
 <img align="left" src="https://github.com/KevalKothiya/universe/assets/131429045/93b011c3-0cbd-4519-a6d8-4076a70a91db" width="220px">
