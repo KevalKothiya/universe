@@ -38,6 +38,7 @@ dependencies:
   provider: ^6.0.5
   shared_preferences: ^2.1.1
   sizer: ^2.0.15
+  animated_text_kit: ^4.2.2
   google_fonts:
 
 dev_dependencies:
@@ -66,6 +67,7 @@ flutter:
     - assests/splash_screen_image/
     - assests/home_page_image/
     - assests/json_images/
+    - assests/details_image/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

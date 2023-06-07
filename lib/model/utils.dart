@@ -25,7 +25,7 @@ class TextThemes {
   );
 
   static TextStyle textStyleDark = const TextStyle(
-    color: CupertinoColors.white,
+    color: CupertinoColors.black,
     fontSize: 16,
     decoration: TextDecoration.none,
   );

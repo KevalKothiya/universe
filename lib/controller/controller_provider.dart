@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -41,6 +40,23 @@ class GridViewMode_Provider extends ChangeNotifier {
   }
 }
 
+class ExplictMode_Provider extends ChangeNotifier {
+  ExplictMode_Model explict;
+
+  ExplictMode_Provider({required this.explict,});
+
+  AlternateValue() async {
+    explict.isExplict = !explict.isExplict;
+
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+
+    await preferences.setBool('isExplict', explict.isExplict);
+
+    notifyListeners();
+  }
+}
+
+
 class loadData_Provider extends ChangeNotifier {
   String? data;
 
@@ -52,10 +68,11 @@ class loadData_Provider extends ChangeNotifier {
 
     universe = decoded
         .map(
-          (e) => Universe_Model.map(
+          (e) =>
+          Universe_Model.map(
             data: e,
           ),
-        )
+    )
         .toList();
   }
 }
